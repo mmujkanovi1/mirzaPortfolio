@@ -1,0 +1,159 @@
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 4rem;
+    transition: width var(--transition-duration);
+    display: flex;
+    background-color: #333;
+    color: white;
+  /*  background-color: #0e387a; */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+/*    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+}
+
+nav a {
+    text-decoration: none;
+    color: #E8E8E8;
+    border-style: 1px solid black;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #333;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+    nav.active {
+        display: flex;
+    }
+}
+
+.menu {
+    position: fixed;  
+    top: 55px;
+    left: -300px; /* Skriva meni po defaultu */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+    overflow-y: auto; /* Omogućava skrolanje ako je meni duži od ekrana */
+    color: white;
+}
+
+.menu.open {
+    left: 0; /* Prikazuje meni kada je otvoren */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna crna pozadina */
+    z-index: 1;
+    display: none; /* Po defaultu je sakriven */
+}
+
+.menu.open + .overlay {
+    display: block; /* Prikazuje se kada je meni otvoren */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+ 
+}
+li:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #333; 
+    color: white;
+}
+
+nav ul:hover {
+    color: white;
+}
+
+
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    font-size: 24px;
+    color: black; /* Boja ikone X */
+}
+
+.menuButton{
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+:host ::ng-deep  .p-button {
+border: none;
+border-radius: 100px;
+}
+
+:host ::ng-deep  .p-button :hover {
+    background-color: black;
+    border: none;
+    }
+
+    :host ::ng-deep .pButtonMain :hover {
+        background-color: black;
+border: none;
+    }

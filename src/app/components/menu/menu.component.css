@@ -1,0 +1,107 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Skriva meni po defaultu */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s;
+    z-index: 2;
+    overflow-y: auto; /* Omogućava skrolanje ako je meni duži od ekrana */
+}
+
+.menu.open {
+    left: 0; /* Prikazuje meni kada je otvoren */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna crna pozadina */
+    z-index: 1;
+    display: none; /* Po defaultu je sakriven */
+}
+
+.menu.open + .overlay {
+    display: block; /* Prikazuje se kada je meni otvoren */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+ 
+}
+li:hover {
+    background-color: #515C66; 
+}
+
+
+
+a {
+    text-decoration: none;
+    /* Boja linkova */
+    font-size: 18px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    font-size: 24px;
+    color: #515C66; /* Boja ikone X */
+}
+
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+.toggle-button {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: aqua;
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+.toggle-button:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}

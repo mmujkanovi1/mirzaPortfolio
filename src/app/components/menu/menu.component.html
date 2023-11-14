@@ -1,0 +1,17 @@
+<!-- menu.component.html -->
+<div class="menu" [class.open]="isOpen">
+    <button class="close-button" *ngIf="isOpen" (click)="closeMenu()">
+        <div class="close-icon">X</div>
+    </button>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <!-- Dodajte više stavki menija po potrebi -->
+    </ul>
+</div>
+<button class="toggle-button" *ngIf="!isOpen" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</button>
