@@ -16,6 +16,14 @@ import { ListboxModule } from 'primeng/listbox';
 import { EducationComponent } from './components/education/education.component';
 import { TimelineModule } from 'primeng/timeline';
 import { ImageModule } from 'primeng/image';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AccordionModule } from 'primeng/accordion';
+import { DividerModule } from 'primeng/divider';
+import { DataViewModule } from 'primeng/dataview';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +32,11 @@ import { ImageModule } from 'primeng/image';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    EducationComponent
+    EducationComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +48,10 @@ import { ImageModule } from 'primeng/image';
     ButtonModule,
     ListboxModule,
     TimelineModule,
-    ImageModule
+    ImageModule,
+    AccordionModule,
+    DividerModule,
+    DataViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

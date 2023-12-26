@@ -9,12 +9,17 @@
     </button>
     <nav>
         <ul>
+            <li *ngFor="let menuItem of menuItems">
+                <a [href]="menuItem.link">{{ menuItem.text }}</a>
+              </li>
+              <!--
             <li><a href="/about">About</a></li>
             <li><a href="/education">Education</a></li>
             <li><a href="#">Experiance</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Skils</a></li>
             <li><a href="#">Contact</a></li>
+            -->
         </ul>
     </nav>
 
