@@ -1,6 +1,8 @@
 
 
 header {
+    font: small-caption;
+    font-variant: all-small-caps;
     position: fixed;
     top: 0;
     left: 0;
