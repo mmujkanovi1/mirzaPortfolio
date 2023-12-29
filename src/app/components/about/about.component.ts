@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  visible: boolean = false;
+
+  showDialog() {
+      this.visible = true;
+  }
 
   panelTitle= "panel title";
   panelContent= "panel content"

@@ -23,6 +23,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AccordionModule } from 'primeng/accordion';
 import { DividerModule } from 'primeng/divider';
 import { DataViewModule } from 'primeng/dataview';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { TagModule } from 'primeng/tag';
+import { RatingModule } from 'primeng/rating';
+import { DialogModule } from 'primeng/dialog';
+
 
 
 @NgModule({
@@ -51,7 +57,12 @@ import { DataViewModule } from 'primeng/dataview';
     ImageModule,
     AccordionModule,
     DividerModule,
-    DataViewModule
+    DataViewModule,
+    InputTextModule,
+    InputTextareaModule,
+    TagModule,
+    RatingModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

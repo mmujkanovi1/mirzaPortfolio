@@ -1,0 +1,26 @@
+.contactDiv {
+    justify-content: center;
+}
+
+.mailSendButton {
+    height: 35px;
+    width: 50%;
+    float: right;
+    background-color: #333;
+    font-variant: all-small-caps;
+    font-family: math;
+}
+
+.mailSendButton :hover {
+     background-color: #333 !important;
+}
+
+.p-card-body {
+    padding-bottom: 0px !important;
+}
+
+@media (max-width: 360px) {
+    .mailSendButton {
+        width: 100%;
+    }
+}
