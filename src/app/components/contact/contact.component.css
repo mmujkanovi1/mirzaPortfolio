@@ -11,8 +11,8 @@
     font-family: math;
 }
 
-.mailSendButton :hover {
-     background-color: #333 !important;
+:host ::ng-deep .p-button:enabled:hover {
+    background-color: #100f0f !important;
 }
 
 .p-card-body {
