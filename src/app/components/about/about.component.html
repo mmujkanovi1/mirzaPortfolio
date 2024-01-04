@@ -34,16 +34,24 @@
 
         <div class="grid">
 
-            <div class="col-12 sm:col-6" style="align-self: center;">
-                <div class="aboutMeText">  <p class="ml2">Hi, <br>
-                    My name is Mirza Mujkanovic.<br>
-                    I am software engineer!</p>
+            <div data-aos="fade-left" class="col-12 sm:col-6" style="align-self: center;">
+                <div  class="aboutMeText">
+                     <p class="ml2">Hi, <br>
+                        My name is Mirza Mujkanovic.<br>
+                        I am software engineer!</p>
                 </div>
+                Enthusiastic software engineer with
+                experience
+                participating
+                in the complete product
+                development lifecycle of successfully launched
+                applications.<br>
+                Adaptable in various team
+                environments.<br>
                 <div>
-                    <button pButton pRipple label="Why me"
-                        class="p-button-success"></button>
-                    <p-button (click)="showDialog()" icon="pi pi-external-link"
-                        label="Why me"></p-button>
+                    <button pButton class="button" (click)="showDialog()"
+                        icon="pi pi-external-link"
+                        label="Why me"></button>
                     <p-dialog header="Why me" [(visible)]="visible"
                         [style]="{width: '70vw'}">
                         <p>
@@ -89,7 +97,7 @@
                 </p-image>
                 -->
                 <img class="mirzaImage"
-                    src="assets/images/mirza2Nova.jpg"
+                    src="assets/images/mirzaIcon.png"
                     alt="Image" />
             </div>
 

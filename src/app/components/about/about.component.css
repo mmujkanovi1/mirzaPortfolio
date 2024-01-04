@@ -25,7 +25,7 @@
 .ml6 {
     position: relative;
     font-weight: 900;
-    font-size: 3.3em;
+    font-size: 2rem;
   }
   
   .ml6 .text-wrapper {
@@ -44,7 +44,7 @@
 
   .ml2 {
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 2em;
     font-family: cursive;
   }
   
@@ -52,3 +52,20 @@
     display: inline-block;
     line-height: 1em;
   }
+
+  .button {
+    height: 35px;
+    width: 25%;
+    background-color: #333;
+    font-variant: all-small-caps;
+    font-family: math;
+}
+:host ::ng-deep .p-button:enabled:hover {
+    background-color: #100f0f !important;
+}
+/*
+:host ::ng-deep .p-card {
+    background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
+}
+*/
+

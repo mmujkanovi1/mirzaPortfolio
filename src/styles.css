@@ -6,6 +6,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
+   /* background-color: #333; */
 }
 
 a {
@@ -62,4 +64,14 @@ a {
         width: 50%;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
 

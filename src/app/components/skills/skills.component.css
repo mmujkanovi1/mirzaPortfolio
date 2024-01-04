@@ -15,3 +15,7 @@ img {
     height: 50px;
     width: 50px;
 }
+
+:host ::ng-deep .p-card {
+    background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
+}

@@ -25,7 +25,7 @@ export class AboutComponent implements OnInit {
       var textWrapper = document.querySelector('.ml2');
       textWrapper!.innerHTML = textWrapper!.textContent!.replace(/\S/g, "<span class='letter'>$&</span>");
 
-      anime.timeline({ loop: true })
+      anime.timeline()
         .add({
           targets: '.ml2 .letter',
           scale: [4, 1],
@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
           delay: (el: number, i: number) => 70 * i
         }).add({
           targets: '.ml2',
-          opacity: 0,
+          opacity: 1,
           duration: 1000,
           easing: "easeOutExpo",
           delay: 1000

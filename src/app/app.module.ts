@@ -28,6 +28,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { TagModule } from 'primeng/tag';
 import { RatingModule } from 'primeng/rating';
 import { DialogModule } from 'primeng/dialog';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 
 
@@ -62,7 +63,8 @@ import { DialogModule } from 'primeng/dialog';
     InputTextareaModule,
     TagModule,
     RatingModule,
-    DialogModule
+    DialogModule,
+    TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
