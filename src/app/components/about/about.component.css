@@ -95,3 +95,28 @@ img{
     background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
 }
 
+li.circle-checkmark {
+    position: relative;
+}
+
+li.circle-checkmark::before {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 2px; 
+    border: solid 8px #333;
+    border-radius: 8px;
+  }
+  
+  li.circle-checkmark::after {
+    content: ""; 
+    position: absolute; 
+    left: 5px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
