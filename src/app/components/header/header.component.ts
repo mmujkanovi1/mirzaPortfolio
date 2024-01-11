@@ -5,6 +5,7 @@ import { MenuItem } from 'primeng/api';
 interface MenuItems {
   text: string;
   link: string;
+  active: boolean;
 }
 
 @Component({
@@ -15,53 +16,55 @@ interface MenuItems {
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
   isOpen = false;
-  gfg: MenuItem[] = [ 
-    { 
-        label: 'HTML', 
-    }, 
-    { 
-        label: 'AngularJS', 
-    }, 
-    { 
-        label: 'ReactJS', 
-    }, 
-    { 
-        label: 'PrimeNG', 
-    }, 
-];
+  gfg: MenuItem[] = [
+    {
+      label: 'HTML',
+    },
+    {
+      label: 'AngularJS',
+    },
+    {
+      label: 'ReactJS',
+    },
+    {
+      label: 'PrimeNG',
+    },
+  ];
 
   sidebarVisible = false;
 
   menuItems!: MenuItems[];
 
-  constructor(private router: Router) {
+  bntStyle: string;
 
+  constructor(private router: Router) {
+    this.bntStyle = 'btn-default';
   }
 
-    ngOnInit() {
-      this.menuItems = [
-        { text: 'About', link: 'about' },
-        { text: 'Education', link: 'education' },
-        { text: 'Experience', link: 'experience' },
-        { text: 'Projects', link: 'projects' },
-        { text: 'Skills', link: 'skills' },
-        { text: 'Contact', link: 'contact' },
-      ];
-      this.gfg = [ 
-        { 
-            label: 'HTML', 
-        }, 
-        { 
-            label: 'AngularJS', 
-        }, 
-        { 
-            label: 'ReactJS', 
-        }, 
-        { 
-            label: 'PrimeNG', 
-        }, 
-    ]; 
-    }
+  ngOnInit() {
+    this.menuItems = [
+      { text: 'About', link: 'about', active: true },
+      { text: 'Education', link: 'education', active: false },
+      { text: 'Experience', link: 'experience', active: false },
+      { text: 'Projects', link: 'projects', active: false },
+      { text: 'Skills', link: 'skills', active: false },
+      { text: 'Contact', link: 'contact' , active: false},
+    ];
+    this.gfg = [
+      {
+        label: 'HTML',
+      },
+      {
+        label: 'AngularJS',
+      },
+      {
+        label: 'ReactJS',
+      },
+      {
+        label: 'PrimeNG',
+      },
+    ];
+  }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -74,6 +77,12 @@ export class HeaderComponent implements OnInit {
 
   changePage() {
     this.router.navigate(['education']);
+  }
+
+
+  changeStyle() {
+    this.bntStyle = 'btn-change';
+
   }
 
 }

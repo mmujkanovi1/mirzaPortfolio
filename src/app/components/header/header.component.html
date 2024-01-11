@@ -1,16 +1,25 @@
 
 <header>
-    <i class="pi pi-chevron-right"></i>
+    <label for="check">
+        <input type="checkbox" id="check" (click)="toggleMenu()"/> 
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <h1>Mirza.dev</h1>
+      <!--
     <p-button class="pButtonMain" (click)="sidebarVisible = true" icon="pi pi-chevron-right"></p-button>
     <button class="toggle-button menuButton" (click)="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </button>
+    -->
     <nav>
-        <ul>
-            <li *ngFor="let menuItem of menuItems">
-                <a [routerLink]="[menuItem.link]" >{{ menuItem.text }}</a>
+        <ul >
+            <li  *ngFor="let menuItem of menuItems" (onclick)="changeStyle()">
+                <a  class="navigation"  [routerLink]="[menuItem.link]" routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true}>{{ menuItem.text }}</a>
               </li>
               <!--
             <li><a href="/about">About</a></li>

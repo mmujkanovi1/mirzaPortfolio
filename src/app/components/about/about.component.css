@@ -9,6 +9,29 @@
 
 }
 
+img{
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: #333; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
 
 @media only screen and (max-width: 576px) {
     .mirzaImageDiv {
@@ -39,12 +62,16 @@
   
   .ml6 .letter {
     display: inline-block;
-    line-height: 1em;
+    line-height: 2em;
+  }
+
+  .aboutMeText {
+    text-align: center;
   }
 
   .ml2 {
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: cursive;
   }
   
@@ -63,9 +90,8 @@
 :host ::ng-deep .p-button:enabled:hover {
     background-color: #100f0f !important;
 }
-/*
+
 :host ::ng-deep .p-card {
     background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
 }
-*/
 
