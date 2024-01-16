@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 declare var anime: any;
 
@@ -9,6 +13,10 @@ declare var anime: any;
 })
 export class AboutComponent implements OnInit {
   visible: boolean = false;
+  faFacebook = faFacebook;
+  faInstagram = faInstagram;
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 
   showDialog() {
     this.visible = true;

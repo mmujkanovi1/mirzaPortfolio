@@ -29,7 +29,7 @@ import { TagModule } from 'primeng/tag';
 import { RatingModule } from 'primeng/rating';
 import { DialogModule } from 'primeng/dialog';
 import { TabMenuModule } from 'primeng/tabmenu';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -64,7 +64,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
     TagModule,
     RatingModule,
     DialogModule,
-    TabMenuModule
+    TabMenuModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

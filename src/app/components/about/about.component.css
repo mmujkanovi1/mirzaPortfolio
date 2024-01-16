@@ -9,7 +9,7 @@
 
 }
 
-img{
+.mirzaImage{
     --g: 4px;     /* the gap */
     --b: 12px;    /* border thickness*/
     --c: #333; /* the color */
@@ -27,7 +27,7 @@ img{
     filter: grayscale(50%);
     transition: .3s;
   }
-  img:hover {
+  .mirzaImage:hover {
     --_p: 75%;
     filter: grayscale(0%);
   }
@@ -119,4 +119,108 @@ li.circle-checkmark::before {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+
+  .aboutMe_socialm_cont{
+    width: 155px;
+    height: 100%;
+    margin: 0;
+    margin-top: 13px;
+    padding: 0;
+    justify-content: center;
+    display: grid;
+}
+
+.socialm_cont {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+}
+
+.socialm_cont  img {
+  width: 100%;
+  height: 100%;
+}
+
+.socialm_cont {
+  &:hover,
+  &:focus {
+    color: #4183c4;
+    box-shadow: 0 0 24px 0 #4183c4
+  }
+  .socialm_cont  img {
+    color: #4183c4;
+  }
+}
+
+
+
+ul {
+  position:relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+ul li a .fab {
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+ul li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
 
