@@ -27,91 +27,120 @@
     </div>
 </div>
     -->
-
+<!--
 <div class="panel">
+-->
+<p-card header="About" class="panelClass">
+    <div class="aboutMeText">
+        <p class="ml2">Hi, <br>
+            My name is Mirza Mujkanovic.
+            I am software engineer!</p>
+    </div>
+        
+    <div class="grid aboutMeList">
 
-    <p-card header="About">
-        <div class="aboutMeText">
-            <p class="ml2">Hi, <br>
-                My name is Mirza Mujkanovic.
-                I am software engineer!</p>
-        </div>
-        <div class="grid">
+        <div class="col-12 sm:col-7" style="align-self: center;">
 
-            <div class="col-12 sm:col-6" style="align-self: center;">
+            <li class="circle-checkmark" data-aos="fade-left">
 
-                <li class="circle-checkmark" data-aos="fade-left">
+                Enthusiastic software engineer with
+                experience
+                participating
+                in the complete product
+                development lifecycle of successfully launched
+                applications.
 
-                    Enthusiastic software engineer with
-                    experience
-                    participating
-                    in the complete product
-                    development lifecycle of successfully launched
-                    applications.
+            </li>
+            <li class="circle-checkmark" data-aos="fade-right">
+                Adaptable in various team
+                environments.
 
-                </li>
-                <li class="circle-checkmark" data-aos="fade-right">
-                    Adaptable in various team
-                    environments.
+            </li>
+            <li class="circle-checkmark" data-aos="fade-right">
+                Able to manage priorities when under pressure.
+            </li>
+            <li class="circle-checkmark" data-aos="fade-right">
+                Enjoy learning something new every day, working in a team and I
+                easily adapt to change.
+            </li>
+            <li class="circle-checkmark" data-aos="fade-right">
+                Communicative, ambitious and curious person 
+            </li>
+            <div style="margin-top: 20px;" data-aos="fade-up">
+                <button pButton class="button" (click)="showDialog()"
+                    icon="pi pi-external-link"
+                    label="Why me"></button>
+                <p-dialog header="Why me" [(visible)]="visible"
+                    [style]="{width: '70vw'}">
+                    <p>
+                        Enthusiastic software engineer with
+                        experience
+                        participating
+                        in the complete product
+                        development lifecycle of successfully launched
+                        applications.<br>
+                        Adaptable in various team
+                        environments.<br>
+                        Able to manage priorities when under pressure.<br>
+                        My name is Mirza Mujkanovic. I received my diploma
+                        in electrical engineering, computer and informatics
+                        science from University of Sarajevo.
+                        <br>
+                        In my current workplace at Olivebh, where I have had
+                        the privilege of working for two years now, I am a
+                        full-stack developer. I have played an important
+                        role on various projects, such as Court case
+                        management system, a Scandinavian airline system and
+                        a factoring system. In addition, I have several of
+                        my own projects, some of which are still ongoing.
+                        You can find them all on my github account:
+                        https://github.com/mmujkanovi1
+                        <br>
+                        I like to spend my free time watching movies,
+                        exercising or going out with friends. Most of my
+                        free time, however, is spent on my personal projects
+                        on github and with my family.
 
-                </li>
-
-                <div style="margin-top: 20px;" data-aos="fade-up">
-                    <button pButton class="button" (click)="showDialog()"
-                        icon="pi pi-external-link"
-                        label="Why me"></button>
-                    <p-dialog header="Why me" [(visible)]="visible"
-                        [style]="{width: '70vw'}">
-                        <p>
-                            Enthusiastic software engineer with
-                            experience
-                            participating
-                            in the complete product
-                            development lifecycle of successfully launched
-                            applications.<br>
-                            Adaptable in various team
-                            environments.<br>
-                            Able to manage priorities when under pressure.<br>
-                            My name is Mirza Mujkanovic. I received my diploma
-                            in electrical engineering, computer and informatics
-                            science from University of Sarajevo.
-                            <br>
-                            In my current workplace at Olivebh, where I have had
-                            the privilege of working for two years now, I am a
-                            full-stack developer. I have played an important
-                            role on various projects, such as Court case
-                            management system, a Scandinavian airline system and
-                            a factoring system. In addition, I have several of
-                            my own projects, some of which are still ongoing.
-                            You can find them all on my github account:
-                            https://github.com/mmujkanovi1
-                            <br>
-                            I like to spend my free time watching movies,
-                            exercising or going out with friends. Most of my
-                            free time, however, is spent on my personal projects
-                            on github and with my family.
-
-                        </p>
-                    </p-dialog>
-                </div>
-
+                    </p>
+                </p-dialog>
             </div>
-            <div class="col-12 sm:col-4 mirzaImageDiv">
-                <!--
+
+        </div>
+        <div class="col-12 sm:col-5 mirzaImageDiv">
+            <!--
                 <p-image 
                     src="assets/images/mirza2Nova.jpg"
                     alt="Image"
                     width="250">
                 </p-image>
                 -->
-                <img class="mirzaImage"
-                    src="assets/images/mirzaIcon.png"
-                    alt="Image" />
+            <img class="mirzaImage"
+                src="assets/images/mirzaIcon.png"
+                alt="Image" />
 
-            </div>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faFacebook"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faInstagram"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faLinkedin"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faGithub"></fa-icon>
+                        </i></a></li>
+            </ul>
 
-            <div class="col-12 sm:col-2">
-                <!--
+        </div>
+
+        <div class="col-12 sm:col-2">
+            <!--
                 <div class="aboutMe_socialm_cont">
                     <a href="https://github.com/mmujkanovi1" title="Github"
                         target="_blank" class="socialm_cont">
@@ -132,26 +161,124 @@
                             alt="Instagram" /></a>
                 </div>
                 -->
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true">
-                        <fa-icon [icon]="faFacebook"></fa-icon>
-                    </i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true">
-                        <fa-icon [icon]="faInstagram"></fa-icon>
-                    </i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true">
-                        <fa-icon [icon]="faLinkedin"></fa-icon>
-                    </i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true">
-                        <fa-icon [icon]="faGithub"></fa-icon>
-                    </i></a></li>
-                  </ul>
-            </div>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faFacebook"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faInstagram"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faLinkedin"></fa-icon>
+                        </i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"
+                            aria-hidden="true">
+                            <fa-icon [icon]="faGithub"></fa-icon>
+                        </i></a></li>
+            </ul>
+        </div>
+    </div>
 
-    
+    <p >
+        I like <span class="block" [@wordUpdated]="word">
+          <span class="span" *ngFor="let word of [ word ]">
+            <h1>[{{ word }}]</h1>
+          </span>
+        </span>
+      </p>
+</p-card>
+<!--
+</div>
+-->
+
+<p-card class="highlitesSkils">
+    <div>
+        <h1 style="text-align: center;font-variant-caps: petite-caps;">Highlited
+            skils</h1>
+    </div>
+
+    <div class="grid highlitesSkilsDiv" data-aos="fade-up">
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faJava"></fa-icon>
+            <h4> JAVA </h4>
+        </div>
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faAngular"></fa-icon>
+            <h4> ANGULAR </h4>
+        </div>
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faDocker"></fa-icon>
+            <h4> DOCKER </h4>
+        </div>
+    </div>
+
+    <div class="grid highlitesSkilsDiv" data-aos="fade-up">
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faDatabase"></fa-icon>
+            <h4> DATABASE </h4>
+        </div>
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faHtml5"></fa-icon>
+            <h4> HTML </h4>
+        </div>
+        <div class="col-6 sm:col-3 skillsDiv">
+            <fa-icon [icon]="faCss3"></fa-icon>
+            <h4> CSS </h4>
+            <button class="moreButton"><span>Find more!</span></button>
         </div>
 
+    </div>
 
-       
-    </p-card>
-</div>
+</p-card>
+
+<p-card header>
+    <div style="text-align: center;">
+        <h2 style="margin-top: 0px;">Qualifications: 2021 - Bachelor’s degree in
+            computing and Information Science</h2>
+        <h2>Current possition: OliveBH FULL-STACK</h2>
+        <h2>Company link: https://olivebh.com/</h2>
+
+        <a href="#"><i class="fab fa-facebook"
+                aria-hidden="true">
+                <fa-icon [icon]="faFacebook"></fa-icon>
+            </i></a>
+        <a href="#"><i class="fab fa-instagram"
+                aria-hidden="true">
+                <fa-icon [icon]="faInstagram"></fa-icon>
+            </i></a>
+        <a href="#"><i class="fab fa-linkedin"
+                aria-hidden="true">
+                <fa-icon [icon]="faLinkedin"></fa-icon>
+            </i></a>
+        <a href="#"><i class="fab fa-github"
+                aria-hidden="true">
+                <fa-icon [icon]="faGithub"></fa-icon>
+            </i></a>
+
+    </div>
+
+</p-card>
+
+<p-card header class="highlitesSkils" style="text-align: center;">
+    <a href="#"><i class="fab fa-facebook"
+            aria-hidden="true">
+            <fa-icon [icon]="faFacebook"></fa-icon>
+        </i></a>
+    <a href="#"><i class="fab fa-instagram"
+            aria-hidden="true">
+            <fa-icon [icon]="faInstagram"></fa-icon>
+        </i></a>
+    <a href="#"><i class="fab fa-linkedin"
+            aria-hidden="true">
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+        </i></a>
+    <a href="#"><i class="fab fa-github"
+            aria-hidden="true">
+            <fa-icon [icon]="faGithub"></fa-icon>
+        </i></a>
+    <p-divider style="text-align: -webkit-center;"></p-divider>
+
+</p-card>

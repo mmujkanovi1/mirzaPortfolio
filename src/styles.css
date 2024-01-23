@@ -94,3 +94,7 @@ a {
     opacity: 1;
 }
 
+:host ::ng-deep .panelClass .p-card {
+    margin-top: 50px!important;
+  } 
+

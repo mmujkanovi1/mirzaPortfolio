@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from 'src/app/model/Project';
 import { ProjectService } from 'src/app/services/projects.service';
+import { faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -8,6 +13,13 @@ import { ProjectService } from 'src/app/services/projects.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+
+  faAngular = faAngular;
+  faJava = faJava;
+  faHtml5 = faHtml5;
+  faCss3 = faCss3;
+  faDatabase = faDatabase;
+
   layout: string = 'list';
 
   projects!: Project[];
