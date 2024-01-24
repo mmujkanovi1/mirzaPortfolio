@@ -34,12 +34,20 @@
     <div class="aboutMeText">
         <p class="ml2">Hi, <br>
             My name is Mirza Mujkanovic.
-            I am software engineer!</p>
+            I am software 
+        </p>
     </div>
+    <p style="margin-bottom: 50px;">
+        <span class="block" [@wordUpdated]="word">
+             <span class="span" *ngFor="let word of [ word ]">
+                 <h1>[{{ word }}]</h1>
+             </span>
+         </span>
+     </p>
 
     <div class="grid aboutMeList">
 
-        <div class="col-12 sm:col-7" style="align-self: center;">
+        <div class="col-12 sm:col-7 md:col-7" style="align-self: center;">
 
             <li class="circle-checkmark" data-aos="fade-left">
 
@@ -66,6 +74,18 @@
             <li class="circle-checkmark" data-aos="fade-right">
                 Communicative, ambitious and curious person
             </li>
+            
+            <div class="container">
+            <a href="#" class="downloadButton type--B">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">DOWNLOAD CV</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+              
+            </div>
+            <!--
             <div style="margin-top: 20px;" data-aos="fade-up">
                 <button pButton class="button" (click)="showDialog()"
                     icon="pi pi-external-link"
@@ -104,9 +124,10 @@
                     </p>
                 </p-dialog>
             </div>
+            -->
 
         </div>
-        <div class="col-12 sm:col-5 mirzaImageDiv">
+        <div class="col-12 sm:col-5 md:col-4 mirzaImageDiv">
             <!--
                 <p-image 
                     src="assets/images/mirza2Nova.jpg"
@@ -118,11 +139,8 @@
                 src="assets/images/mirzaIcon.png"
                 alt="Image" />
 
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook"
-                            aria-hidden="true">
-                            <fa-icon [icon]="faFacebook"></fa-icon>
-                        </i></a></li>
+            <ul style="place-content: center;">
+               
                 <li><a href="#"><i class="fab fa-instagram"
                             aria-hidden="true">
                             <fa-icon [icon]="faInstagram"></fa-icon>
@@ -161,34 +179,18 @@
                             alt="Instagram" /></a>
                 </div>
                 -->
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook"
-                            aria-hidden="true">
-                            <fa-icon [icon]="faFacebook"></fa-icon>
-                        </i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"
-                            aria-hidden="true">
-                            <fa-icon [icon]="faInstagram"></fa-icon>
-                        </i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"
-                            aria-hidden="true">
-                            <fa-icon [icon]="faLinkedin"></fa-icon>
-                        </i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-g"
-                            aria-hidden="true">
-                            <fa-icon [icon]="faGithub"></fa-icon>
-                        </i></a></li>
-            </ul>
+           
         </div>
     </div>
-
-    <p>
-        I like <span class="block" [@wordUpdated]="word">
+<!--
+    <p style="margin-bottom: 50px; margin-top: 50px;">
+       <span class="block" [@wordUpdated]="word">
             <span class="span" *ngFor="let word of [ word ]">
                 <h1>[{{ word }}]</h1>
             </span>
         </span>
     </p>
+    -->
 </p-card>
 <!--
 </div>
