@@ -65,6 +65,23 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .findMoreDiv {
+      text-align:center;
+    }
+    .moreButton {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .skillsSubTitle {
+    margin-top: 50px;
+  }
+}
+
 .aboutMeText {
   margin-top: 50px;
 }

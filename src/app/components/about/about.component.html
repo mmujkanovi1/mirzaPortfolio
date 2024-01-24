@@ -36,7 +36,7 @@
             My name is Mirza Mujkanovic.
             I am software engineer!</p>
     </div>
-        
+
     <div class="grid aboutMeList">
 
         <div class="col-12 sm:col-7" style="align-self: center;">
@@ -64,7 +64,7 @@
                 easily adapt to change.
             </li>
             <li class="circle-checkmark" data-aos="fade-right">
-                Communicative, ambitious and curious person 
+                Communicative, ambitious and curious person
             </li>
             <div style="margin-top: 20px;" data-aos="fade-up">
                 <button pButton class="button" (click)="showDialog()"
@@ -182,13 +182,13 @@
         </div>
     </div>
 
-    <p >
+    <p>
         I like <span class="block" [@wordUpdated]="word">
-          <span class="span" *ngFor="let word of [ word ]">
-            <h1>[{{ word }}]</h1>
-          </span>
+            <span class="span" *ngFor="let word of [ word ]">
+                <h1>[{{ word }}]</h1>
+            </span>
         </span>
-      </p>
+    </p>
 </p-card>
 <!--
 </div>
@@ -201,6 +201,52 @@
     </div>
 
     <div class="grid highlitesSkilsDiv" data-aos="fade-up">
+        <div class="col-12 sm:col-12 md:col-7">
+            <div class="grid">
+                <div class="col-6 sm:col-4 skillsDiv">
+                    <div class="grid">
+                        <div class="col-12">
+                            <fa-icon [icon]="faJava"></fa-icon>
+                            <h4> JAVA </h4>
+                        </div>
+                        <div class="col-12">
+                            <fa-icon [icon]="faDatabase"></fa-icon>
+                            <h4> DATABASE </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 sm:col-4 skillsDiv">
+                    <div class="grid">
+                        <div class="col-12">
+                            <fa-icon [icon]="faAngular"></fa-icon>
+                            <h4> ANGULAR </h4>
+                        </div>
+                        <div class="col-12">
+                            <fa-icon [icon]="faHtml5"></fa-icon>
+                            <h4> HTML </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 sm:col-4 skillsDiv lastSkillDiv">
+                    <div class="grid">
+                        <div class="col-6 sm:col-12">
+                            <fa-icon [icon]="faDocker"></fa-icon>
+                            <h4> DOCKER </h4>
+                        </div>
+                        <div class="col-6 sm:col-12">
+                            <fa-icon [icon]="faCss3"></fa-icon>
+                            <h4> CSS </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-5 findMoreDiv">
+            <h3 class="skillsSubTitle">I got used to work on both (backend and frontend)</h3>
+            <h4>Click "Find more" to get full list of skills! </h4>
+            <button class="moreButton"><span>Find more!</span></button>
+        </div>
+        <!--
         <div class="col-6 sm:col-3 skillsDiv">
             <fa-icon [icon]="faJava"></fa-icon>
             <h4> JAVA </h4>
@@ -213,8 +259,9 @@
             <fa-icon [icon]="faDocker"></fa-icon>
             <h4> DOCKER </h4>
         </div>
+        -->
     </div>
-
+  <!--
     <div class="grid highlitesSkilsDiv" data-aos="fade-up">
         <div class="col-6 sm:col-3 skillsDiv">
             <fa-icon [icon]="faDatabase"></fa-icon>
@@ -231,6 +278,7 @@
         </div>
 
     </div>
+-->
 
 </p-card>
 
