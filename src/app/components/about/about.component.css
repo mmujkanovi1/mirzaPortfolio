@@ -308,6 +308,23 @@ height: 120px;
   height: 120px;
 }
 
+:host ::ng-deep .svg-inline--fa.fa-java.fa-w-12:hover,
+:host ::ng-deep .svg-inline--fa.fa-angular.fa-w-14:hover,
+:host ::ng-deep .svg-inline--fa.fa-docker.fa-w-20:hover,
+:host ::ng-deep .svg-inline--fa.fa-database.fa-w-14:hover,
+:host ::ng-deep .svg-inline--fa.fa-html5.fa-w-12:hover,
+:host ::ng-deep .svg-inline--fa.fa-css3.fa-w-16:hover {
+  transform: scale(1.2,1.2);
+  transition: all 1s;
+  
+  color: #100f0f;
+  /*
+  width: 140px;
+  height: 140px;
+  */
+
+}
+
 :host ::ng-deep .p-card .p-card-body {
   padding-bottom: 0px;
 }
@@ -378,10 +395,31 @@ span.block {
   position: relative;
 }
 span.span {
-  margin-left: auto;
-  margin-right: auto;
+  background-color: red;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  letter-spacing: .2rem;
+  color: rgb(201, 76, 76);
   position: absolute;
-  left: 45%;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  font-size: 30px;
   top: -50px;
   word-spacing: 30px;
   margin-bottom: 50px;
@@ -609,6 +647,15 @@ span.span {
 .downloadButton:not(:last-child){
 margin-bottom : 64px ;
 }
+
+.textBox{
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  }
 
 
 
