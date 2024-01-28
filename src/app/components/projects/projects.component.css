@@ -2,6 +2,11 @@
     background: linear-gradient(271.4deg, #d8e0ea 0.53%, #f5f7fb 94.33%);
 }
 
+:host ::ng-deep .panelClass .p-card {
+  margin-top: 50px!important;
+} 
+
+
 .project {
   text-align: center;
     padding: 30px; 
@@ -20,20 +25,11 @@
 
 .project:hover {
   background: #333; 
-  height: 100%;
-  .project-title {
-    transition: all 0.5s;
-  opacity: 0.5;
-}
-.project-technologies{
-  display: none;
-}
-.btn {
-  transition: left 0.5s;
-  display:block;
-}
+  transform: scale(1.05,1.05);
+  transition: all 1s;
 .project-title {
   color: white;
+  transition: all 1s;
 }
 transition: 0.4s;
 }
@@ -81,7 +77,7 @@ img {
 .box-3 { background-color: #66A182; }
 
 .btn {
-  display: none;
+  display: block;
   line-height: 50px;
   height: 50px;
   text-align: center;

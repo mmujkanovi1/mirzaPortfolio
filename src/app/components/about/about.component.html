@@ -220,11 +220,11 @@
             <div class="grid">
                 <div class="col-6 sm:col-4 skillsDiv">
                     <div class="grid">
-                        <div class="col-12">
+                        <div class="col-12 highiltedSkillDiv">
                             <fa-icon [icon]="faJava"></fa-icon>
                             <h4> JAVA </h4>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 highiltedSkillDiv">
                             <fa-icon [icon]="faDatabase"></fa-icon>
                             <h4> DATABASE </h4>
                         </div>
@@ -303,16 +303,22 @@
     <div style="text-align: center;">
         <h2 style="margin-top: 0px;">Qualifications: 2021 - Bachelor’s degree in
             computing and Information Science</h2>
-            <p-timeline [value]="events">
-                <ng-template pTemplate="content" let-event>
-                    <small class="p-text-secondary">{{ event.date }}</small>
-                </ng-template>
-                <ng-template pTemplate="opposite" let-event>
-                    {{ event.status }}
-                </ng-template>
-            </p-timeline>
-        <h2>Current possition: OliveBH FULL-STACK</h2>
-        <h2>Company link: https://olivebh.com/</h2>
+        <div class="grid">
+            <div class="col-12 sm:col-12">
+                <p-timeline [value]="events">
+                    <ng-template pTemplate="content" let-event>
+                        <small class="p-text-secondary">{{ event.date }}</small>
+                    </ng-template>
+                    <ng-template pTemplate="opposite" let-event>
+                        {{ event.status }}
+                    </ng-template>
+                </p-timeline>
+            </div>
+            <div class="col-12 sm:col-12">
+                <h2>Current possition: OliveBH FULL-STACK</h2>
+                <h2>Company link: https://olivebh.com/</h2>
+            </div>
+        </div>
 
         <div class="textBox">
 
@@ -341,29 +347,70 @@
                 Mirza Mujkanovic
             </h3>
         </div>
+        <div class="categoryWrapper">
+            <h1>More about projects?</h1>
+            <button [routerLink]="['/projects']">
+                <span>
+                    <span>
+                        <span data-attr-span="Projects page">
+                            Projects page
+                        </span>
+                    </span>
+                </span>
+            </button>
 
-    
+        </div>
+        <div class="categoryWrapper">
+            <h1>Have a question?</h1>
+            <button [routerLink]="['/contact']">
+                <span>
+                    <span>
+                        <span data-attr-span="Contact Me">
+                            Contact Me
+                        </span>
+                    </span>
+                </span>
+            </button>
+
+        </div>
+
     </div>
 
 </p-card>
 
 <p-card header class="highlitesSkils" style="text-align: center;">
-    <a href="#"><i class="fab fa-facebook"
+    <a href="https://www.facebook.com/mirza.mujkanovic.98/"
+        target="_blank"
+        class="socialMediaIconHeader"><i class="fab fa-facebook"
             aria-hidden="true">
             <fa-icon [icon]="faFacebook"></fa-icon>
         </i></a>
-    <a href="#"><i class="fab fa-instagram"
+    <a href="https://www.instagram.com/mirza_mujkanovici92/"
+        target="_blank"
+        class="socialMediaIconHeader"><i class="fab fa-instagram"
             aria-hidden="true">
             <fa-icon [icon]="faInstagram"></fa-icon>
         </i></a>
-    <a href="#"><i class="fab fa-linkedin"
+    <a href="https://www.linkedin.com/in/mirza-mujkanovic-82962a1b4/"
+        target="_blank"
+        class="socialMediaIconHeader"><i class="fab fa-linkedin"
             aria-hidden="true">
             <fa-icon [icon]="faLinkedin"></fa-icon>
         </i></a>
-    <a href="#"><i class="fab fa-github"
+    <a href="https://github.com/mmujkanovi1" target="_blank"
+        class="socialMediaIconHeader"><i
+            class="fab fa-github"
             aria-hidden="true">
             <fa-icon [icon]="faGithub"></fa-icon>
         </i></a>
     <p-divider style="text-align: -webkit-center;"></p-divider>
+    <div>
+        <h3>
+            Build with Typescript, CSS3, HTML5
+        </h3>
+        <h3>
+            © {{currentYear}} Mirza Mujkanovic
+        </h3>
+    </div>
 
 </p-card>

@@ -55,11 +55,13 @@ export class AboutComponent implements OnInit {
   faDatabase = faDatabase;
   faDocker = faDocker;
 
+  currentYear = (new Date()).getFullYear();
+
   events: EventItem[];
 
   index = 0;
-  words = ['developer', 'engineer', 'designer', 'devops'];
-  word = 'developer';
+  words = ['DEVELOPER', 'ENGINEER', 'DESIGNER', 'devops'];
+  word = 'DEVELOPER';
 
   showDialog() {
     this.visible = true;
