@@ -47,7 +47,7 @@
 
     <div class="grid aboutMeList">
 
-        <div class="col-12 sm:col-7 md:col-7" style="align-self: center;"
+        <div class="col-12 sm:col-7 md:col-7 lg:col-6 xl:col-5" style="align-self: center;"
             data-aos="fade-left">
 
             <li class="circle-checkmark">
@@ -129,7 +129,7 @@
             -->
 
         </div>
-        <div class="col-12 sm:col-5 md:col-4 mirzaImageDiv">
+        <div class="col-12 sm:col-5 md:col-4 lg:col-3 xl:col-3 mirzaImageDiv">
             <!--
                 <p-image 
                     src="assets/images/mirza2Nova.jpg"
@@ -163,30 +163,6 @@
 
         </div>
 
-        <div class="col-12 sm:col-2">
-            <!--
-                <div class="aboutMe_socialm_cont">
-                    <a href="https://github.com/mmujkanovi1" title="Github"
-                        target="_blank" class="socialm_cont">
-                        <img
-                            src="../../../assets/icons/github.svg"
-                            alt="Github" /></a>
-                    <a
-                        href="https://www.linkedin.com/in/mirza-mujkanovic-82962a1b4/"
-                        title="LinkedIn" target="_blank" class="socialm_cont">
-                        <img
-                            src="../../../assets/icons/linkedIn.svg"
-                            alt="linkedIn" /></a>
-                    <a href="https://www.instagram.com/mirza_mujkanovici92/"
-                        title="Instagram"
-                        target="_blank" class="socialm_cont">
-                        <img
-                            src="../../../assets/icons/instagram.svg"
-                            alt="Instagram" /></a>
-                </div>
-                -->
-
-        </div>
     </div>
     <!--
     <p style="margin-bottom: 50px; margin-top: 50px;">
@@ -319,7 +295,7 @@
                 <h2>Company link: https://olivebh.com/</h2>
             </div>
         </div>
-
+<!--
         <div class="textBox">
 
             <h3 style="text-align: center;"> Hii there, </h3>
@@ -347,6 +323,49 @@
                 Mirza Mujkanovic
             </h3>
         </div>
+        -->
+        <div class="categoryWrapper">
+            <h1>More about me?</h1>
+            <button (click) = "showDialog()">
+                <span>
+                    <span>
+                        <span data-attr-span="Cover letter">
+                            Cover letter
+                        </span>
+                    </span>
+                </span>
+            </button>
+        </div>
+        <p-dialog header="Cover letter" [(visible)]="visible"
+        [style]="{width: '70vw'}">
+        <div class="textBox">
+
+            <h3 style="text-align: center;"> Hii there, </h3>
+
+            <h4>My name is Mirza Mujkanovic. I received my diploma in electrical
+                engineering, computer and informatics science from University of
+                Sarajevo.</h4>
+            <h4>In my current workplace at Olivebh, where I have had the
+                privilege of working for two years now, I am a full-stack
+                developer. I have played an important role on various projects,
+                such as Court case management system, a Scandinavian airline
+                system and a factoring system. In addition, I have several of my
+                own projects, some of which are still ongoing. You can find them
+                all on my github account!
+            </h4>
+            <h4>
+                I like to spend my free time watching movies, exercising or
+                going out with friends. Most of my free time, however, is spent
+                on my personal projects on github and with my family.
+            </h4>
+            <h3 style="margin-bottom: 0px;">
+                Kind Regards,
+            </h3>
+            <h3 style="margin-top: 0px;">
+                Mirza Mujkanovic
+            </h3>
+        </div>
+    </p-dialog>
         <div class="categoryWrapper">
             <h1>More about projects?</h1>
             <button [routerLink]="['/projects']">

@@ -30,6 +30,10 @@ import { RatingModule } from 'primeng/rating';
 import { DialogModule } from 'primeng/dialog';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
+
 
 
 @NgModule({
@@ -65,9 +69,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RatingModule,
     DialogModule,
     TabMenuModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ToastModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

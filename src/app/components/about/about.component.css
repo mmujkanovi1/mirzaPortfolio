@@ -35,6 +35,10 @@
     text-align: center;
 }
 
+.aboutMeList {
+  justify-content: center;
+}
+
 @media only screen and (max-width: 576px) {
 
     .ml2 {
@@ -398,7 +402,7 @@ span.span {
   background-color: red;
   
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, white, black);
+  background-image: linear-gradient(-45deg, rgb(237, 230, 230), black);
   
   
   /* Set the background size and repeat properties. */
@@ -660,12 +664,12 @@ margin-bottom : 64px ;
 
   @media(hover:hover) {
     .categoryWrapper{
-      margin-top: 20px;
+      margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
       border-radius: 5px;
       background-color: white;
-      height: 200px;
+      height: 150px;
       width: 460px;
       background:none;
       display: flex;
