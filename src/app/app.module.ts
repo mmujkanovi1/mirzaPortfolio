@@ -33,6 +33,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
+import { SokopComponent } from './components/projects/sokop/sokop.component';
+import { FactoringComponent } from './components/projects/factoring/factoring.component';
+import { SasComponent } from './components/projects/sas/sas.component';
+import { InfobiroComponent } from './components/projects/infobiro/infobiro.component';
+import { MarketComponent } from './components/projects/market/market.component';
+import { PortfolioComponent } from './components/projects/portfolio/portfolio.component';
+import { XmlComponent } from './components/projects/xml/xml.component';
+import { GenericComponent } from './components/projects/generic/generic.component';
+import { SynonymComponent } from './components/projects/synonym/synonym.component';
+import { BankappComponent } from './components/projects/bankapp/bankapp.component';
 
 
 
@@ -47,7 +57,17 @@ import { ToastModule } from 'primeng/toast';
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    SokopComponent,
+    FactoringComponent,
+    SasComponent,
+    InfobiroComponent,
+    MarketComponent,
+    PortfolioComponent,
+    XmlComponent,
+    GenericComponent,
+    SynonymComponent,
+    BankappComponent
   ],
   imports: [
     BrowserModule,

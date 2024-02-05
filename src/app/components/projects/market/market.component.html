@@ -1,0 +1,56 @@
+<p-card header="Projects">
+
+    <div class="grid" class="projectsMainDiv">
+        <div class="col-12 sm:col-10 md:col-8 lg:col-7 xl:col-6">
+            <h1>Infobiro</h1>
+            <div class="text-gray-800 font-bold text-md">April, 2020 - May, 2020</div>
+            <div class="summary">
+                <h3>Summary</h3>
+                <p>
+                    Spring Boot sample app for advertising with five entities
+                    that are located in postgreSQL database. This app contains
+                    CRUD (create, read, update, delete) routes for "Users",
+                    "Advertisements", "Category" and "AppConfig". You can also
+                    run it in dev, prod and test environment. When the
+                    application is started in test environment, integration
+                    tests that use h2 memory database are run. With JaCoCo we
+                    secured that the application fails when code coverage is
+                    less than 85% on package level. User that is not logged in
+                    can access just "/login"(where user can login) route and
+                    "/users POST" (where user can register) route. I provided
+                    this with Json Web Token which contains "username", "id",
+                    and "role" of the user. JWT is implement in a way that every
+                    route except above must have token in request headers, with
+                    restrictions that ensure that "Category" can create and
+                    update just the user with 'ADMIN' role; "Advertisements" can
+                    create and update just by the user with 'USER' role, and
+                    "appConfig" CRUD routes can be accessed just by 'ADMIN'
+                    users. Routes "/users" GET and "/advertisements" GET have
+                    support for pagination and sorting where default values are
+                    located in "appConfig" entity.
+                </div>
+                <div class="role">
+                    <div class="text-gray-800 font-bold text-md">Role: Backend
+                        development
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div class="text-gray-800 font-bold text-md">Tasks:</div>
+                    <li>Implementing REST APIs</li>
+                    <li><a target="_blank"
+                            href="https://github.com/mmujkanovi1/Market-spring">Github
+                            link</a> - more about app can be found here</li>
+                </div>
+                <div class="technicalSkills">
+                    <div class="text-gray-800 font-bold text-md">Technical
+                        Skills
+                        and
+                        Tools:</div>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>REST</li>
+                    <li>Postgres</li>
+                </div>
+            </div>
+        </div>
+    </p-card>

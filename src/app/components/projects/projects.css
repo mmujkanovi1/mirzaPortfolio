@@ -1,0 +1,60 @@
+.projectsMainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-card {
+    background: center;
+    box-shadow: none;
+}
+
+:host ::ng-deep .p-card .p-card-body {
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+li.checkmark  {
+    list-style: none;
+    position: relative;
+}
+
+@media (min-width: 700px) {
+  p,.text-md,.projectsMainDiv {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+  li {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+    p,.text-md,.projectsMainDiv {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }
+
+  li.checkmark::before {
+    content: ""; 
+    position: absolute; 
+    left: -15px; 
+    top: 15px; 
+    width: 4px;
+    height: 7px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  a {
+    background-color: #333; 
+    color: white;
+     padding: 7px 10px; 
+  }
