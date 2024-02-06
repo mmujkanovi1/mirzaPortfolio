@@ -16,7 +16,7 @@
     
     
     padding: calc(var(--g) + var(--b));
-    --_c: #0000 0 25%, var(--c) 0 50%;
+   /* --_c: #0000 0 25%, var(--c) 0 50%; */
     --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
     --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
     background:
@@ -24,7 +24,7 @@
       var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
     background-size: 200% var(--b),var(--b) 200%;
     cursor: pointer;
-    filter: grayscale(50%);
+  /*  filter: grayscale(50%); */
     transition: .3s;
   }
   .mirzaImage:hover {
@@ -73,7 +73,6 @@
   }
 }
 
-
 @media only screen and (max-width: 400px) {
     .mirzaImage {
         width:100%;
@@ -91,9 +90,15 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   .skillsSubTitle {
     margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .skillsSubTitle {
+    margin-top: 90px;
   }
 }
 
@@ -320,10 +325,10 @@ height: 120px;
 :host ::ng-deep .svg-inline--fa.fa-html5.fa-w-12:hover,
 :host ::ng-deep .svg-inline--fa.fa-css3.fa-w-16:hover {
   transform: scale(1.2,1.2);
-  transition: all 1s;
-  
+  transition: all 0.5s;
+  /*  
   color: #100f0f;
-  /*
+
   width: 140px;
   height: 140px;
   */
@@ -346,8 +351,24 @@ height: 120px;
   margin-top: 50px!important;
 } 
 
+@media only screen and (min-width: 460px) {
 :host ::ng-deep .p-divider-horizontal.p-divider-left{
   width: 250px;
+}
+}
+
+@media only screen and (max-width: 460px) {
+  :host ::ng-deep .p-divider-horizontal.p-divider-left{
+    width: 90%;
+  }
+  :host ::ng-deep span.block {
+ /*   display: none!important; */
+  }
+
+  :host ::ng-deep span.span { 
+    font-size: 15px!important;
+   /* display: none!important; */
+  }
 }
 
 button {
@@ -655,12 +676,7 @@ margin-bottom : 64px ;
 }
 
 .textBox{
-  text-align: justify;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  text-align: left;
   }
 
   @media(hover:hover) {
@@ -671,7 +687,6 @@ margin-bottom : 64px ;
       border-radius: 5px;
       background-color: white;
       height: 150px;
-      width: 460px;
       background:none;
       display: flex;
       justify-content: center;
