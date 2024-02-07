@@ -18,6 +18,7 @@ import { SynonymComponent } from './components/projects/synonym/synonym.componen
 import { BankappComponent } from './components/projects/bankapp/bankapp.component';
 
 const routes: Routes = [
+  /* { path: '', component: AboutComponent }, */
   { path: 'about', component: AboutComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },

@@ -145,6 +145,7 @@ h1 {
 }
 
 .menu {
+    z-index: 999;
     position: fixed;  
     top: 55px;
     left: -300px; /* Skriva meni po defaultu */
