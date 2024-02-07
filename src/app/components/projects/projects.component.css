@@ -27,14 +27,8 @@
   background: #333; 
   transform: scale(1.05,1.05);
   transition: all 1s;
-.project-title {
   color: white;
-  transition: all 1s;
 }
-transition: 0.4s;
-}
-
-
 
 img {
     height: 50px;

@@ -218,19 +218,6 @@ li.circle-checkmark::before {
   height: 100%;
 }
 
-.socialm_cont {
-  &:hover,
-  &:focus {
-    color: #4183c4;
-    box-shadow: 0 0 24px 0 #4183c4
-  }
-  .socialm_cont  img {
-    color: #4183c4;
-  }
-}
-
-
-
 ul {
   display: flex;
   position:relative;
