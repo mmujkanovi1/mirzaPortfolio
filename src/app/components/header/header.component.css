@@ -62,6 +62,26 @@ h1 {
     align-self: center;
 }
 
+@media (max-width: 450px) {
+.menu{
+    width: 100%;
+    left: -100%;
+    }
+}
+
+@media (min-width: 450px) {
+    .menu{
+        width: 250px;
+        left: -300px;
+    }
+}
+
+@media (min-width: 900px) {
+    .menu{
+        display: none;
+    }
+}
+
 @media (max-width: 900px) {
     h1 {
         margin-left: auto;
@@ -148,9 +168,8 @@ h1 {
     z-index: 999;
     position: fixed;  
     top: 55px;
-    left: -300px; /* Skriva meni po defaultu */
-    width: 250px;
     height: 100%;
+    left: -100%;
     background-color: #333;
     transition: left 0.3s;
     overflow-y: auto; /* Omogućava skrolanje ako je meni duži od ekrana */
@@ -226,6 +245,12 @@ nav ul:hover {
 
 #mobileNavigation.active:after {
     width: 100%;
+}
+
+.liMobileNavigation {
+    margin-bottom: 20px;
+    font: small-caption; 
+    font-variant: all-small-caps;
 }
 
 .navigation:hover:after,

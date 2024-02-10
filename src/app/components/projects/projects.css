@@ -52,9 +52,3 @@ li.checkmark  {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
-
-  a {
-    background-color: #333; 
-    color: white;
-     padding: 7px 10px; 
-  }

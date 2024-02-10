@@ -42,7 +42,7 @@
 
 <div class="menu" [class.open]="isMenuOpen">
     <ul>
-        <li style="text-align: -webkit-center;"
+        <li style="text-align: -webkit-center;" class="liMobileNavigation"
             *ngFor="let menuItem of menuItems" (click)="closeMenu()">
             <a style="display: grid; width: 60%;" class="navigation"
                 id="mobileNavigation" [routerLink]="[menuItem.link]"
