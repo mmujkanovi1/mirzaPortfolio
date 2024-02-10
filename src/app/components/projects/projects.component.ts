@@ -29,6 +29,10 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.projectService.getProjects().then((data) => (this.projects = data.slice(0, 12)));
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   getSeverity(project: Project) {

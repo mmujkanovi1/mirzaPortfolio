@@ -886,3 +886,27 @@ margin-bottom : 64px ;
     transform: scale(1.2,1.2);
     transition: 0.4s all;
   }
+
+  .companyLink {
+    font-size: 100%;
+    color: red;
+  }
+
+  .companyLink:hover {
+    cursor:pointer;
+   }
+  
+  /* visited link */
+  .companyLink:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  .companyLink:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  .companyLink:active {
+    color: blue;
+  }

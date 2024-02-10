@@ -25,7 +25,12 @@ export class ContactComponent implements OnInit {
     this.changeInputEvent();
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 
   async sendEmail() {
     console.log("sendEmailButton trigered")

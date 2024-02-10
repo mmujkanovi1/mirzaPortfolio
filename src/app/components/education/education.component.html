@@ -3,17 +3,17 @@
     <p-card header="Education">
 
         <div class="card">
-
+<h2 data-aos="fade-up" style="text-align: center;">
             Qualifications: 2021 - Bachelor’s degree in computing and Information
 Science 
-<br><br>
+</h2>
 
 
-            <p-timeline [value]="events">
-                <ng-template pTemplate="content" let-event>
+            <p-timeline data-aos="fade-up" [value]="events">
+                <ng-template  data-aos="fade-up" pTemplate="content" let-event>
                     <small class="p-text-secondary">{{ event.date }}</small>
                 </ng-template>
-                <ng-template pTemplate="opposite" let-event>
+                <ng-template  data-aos="fade-up" pTemplate="opposite" let-event>
                     {{ event.status }}
                 </ng-template>
             </p-timeline>

@@ -207,7 +207,7 @@ nav ul:hover {
 
 .navigation:hover,
 .navigation:focus,
-.active {
+.navigation.active {
     color:#ffffff
 }
 
@@ -224,6 +224,9 @@ nav ul:hover {
     border-radius: 20%;
 }
 
+#mobileNavigation.active:after {
+    width: 100%;
+}
 
 .navigation:hover:after,
 .active:after {

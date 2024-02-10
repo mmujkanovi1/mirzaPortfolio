@@ -1,13 +1,13 @@
 
 <header>
     <label for="check">
-        <input type="checkbox" id="check" (click)="toggleMenu()"/> 
+        <input type="checkbox" id="check" (click)="toggleMenu()" />
         <span></span>
         <span></span>
         <span></span>
-      </label>
-      <h1>Mirza.dev</h1>
-      <!--
+    </label>
+    <h1>Mirza.dev</h1>
+    <!--
     <p-button class="pButtonMain" (click)="sidebarVisible = true" icon="pi pi-chevron-right"></p-button>
     <button class="toggle-button menuButton" (click)="toggleMenu()">
         <div class="bar"></div>
@@ -16,12 +16,13 @@
     </button>
     -->
     <nav>
-        <ul >
-            <li  *ngFor="let menuItem of menuItems" (onclick)="changeStyle()">
-                <a  class="navigation"  [routerLink]="[menuItem.link]" routerLinkActive="active"
-                [routerLinkActiveOptions]={exact:true}>{{ menuItem.text }}</a>
-              </li>
-              <!--
+        <ul>
+            <li *ngFor="let menuItem of menuItems" (onclick)="changeStyle()">
+                <a class="navigation" [routerLink]="[menuItem.link]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]={exact:true}>{{ menuItem.text }}</a>
+            </li>
+            <!--
             <li><a href="/about">About</a></li>
             <li><a href="/education">Education</a></li>
             <li><a href="#">Experiance</a></li>
@@ -36,15 +37,18 @@
         <p-tabMenu [model]="gfg"> 
         </p-tabMenu> 
     </div>
-    --> 
+    -->
 </header>
 
 <div class="menu" [class.open]="isMenuOpen">
     <ul>
-        <li  *ngFor="let menuItem of menuItems" (onclick)="closeMenu()">
-            <a  class="navigation"  [routerLink]="[menuItem.link]" routerLinkActive="active"
-            [routerLinkActiveOptions]={exact:true}>{{ menuItem.text }}</a>
-          </li>
+        <li style="text-align: -webkit-center;"
+            *ngFor="let menuItem of menuItems" (click)="closeMenu()">
+            <a style="display: grid; width: 60%;" class="navigation"
+                id="mobileNavigation" [routerLink]="[menuItem.link]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true}>{{ menuItem.text }}</a>
+        </li>
         <!--
         <li><a class="navigation" href="/about">About</a></li>
         <li><a href="/education">Education</a></li>
@@ -58,10 +62,10 @@
 <p-sidebar style="z-index: 1;" [(visible)]="sidebarVisible">
     <h3>Sidebar</h3>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
     </p>
 
-
 </p-sidebar>
-
