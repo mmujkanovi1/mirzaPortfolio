@@ -37,6 +37,8 @@ export class HeaderComponent implements OnInit {
 
   bntStyle: string;
 
+  menuCheckbox: any;
+
   constructor(private router: Router) {
     this.bntStyle = 'btn-default';
   }
@@ -72,6 +74,7 @@ export class HeaderComponent implements OnInit {
 
 
   closeMenu() {
+    this.menuCheckbox = false;
     this.isMenuOpen = false;
   }
 
