@@ -93,7 +93,10 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     var textWrapper = document.querySelector('.ml2');
     textWrapper!.innerHTML = textWrapper!.textContent!.replace(/\S/g, "<span class='letter'>$&</span>");
 
